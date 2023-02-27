@@ -51,4 +51,4 @@ for pergunta in perguntas:
     else:
         print('ERROU. ❌😒')
 
-print('\nACERTOU ', qtd_acertos, 'VEZES DE ', len(perguntas), 'PERGUNTAS.')
+print('\nACERTOU ', qtd_acertos, 'VEZES DAS', len(perguntas), 'PERGUNTAS.')
