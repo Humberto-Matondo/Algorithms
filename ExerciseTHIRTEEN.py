@@ -13,7 +13,7 @@ class Casa:
 
 class Condominio:
     def __init__(self):
-        self.lista_de_casas: Casa() = []
+        self.lista_de_casas: Casa()= []
         self.endereco = None
         self.numero_quartos: int = None
 
