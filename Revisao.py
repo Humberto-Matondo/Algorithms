@@ -1,4 +1,4 @@
-from array import array
+# Exercício 1:
 def filter_users_by_age(users, age_limit):
     filtered_users_by_age = []
     for user in users:
@@ -26,8 +26,15 @@ print("\nDetalhes dos usuários:\n")
 for user in users:
     print(f"Nome: {user['nome']}, Idade: {user['age']}, Email: {user['email']}")
 
-filtered_users_by_age = filter_users_by_age(users, 25)
-
 print("\nDetalhes dos usuários maiores de 25 anos:\n")
-printUsers(filtered_users_by_age)
+printUsers(filter_users_by_age(users, 25))
 
+# Exercício 2: Envelhecer usuários em 5 anos
+
+def almendar_idade(users):
+    for user in users:
+        user['age'] += 5
+    return users
+
+print("\nusuários com 5 anos a mais:\n")
+printUsers(almendar_idade(users))
